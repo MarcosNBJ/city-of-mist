@@ -590,7 +590,7 @@ text-shadow: 0px 2px 3px white,
 input.character-name {
     width: 100%;
     height: 1em;
-    font-size: 5em;
+    font-size: 8em;
     padding: 0;
     font-weight: bold;
     text-align: center;
@@ -615,41 +615,37 @@ input#crew-name {
 	border: none;
 	}
 
-input.mythos-name {
-    max-width: 50%;
-    height: 1.2em;
-    padding-right: 0.2em;
-    padding-left: 0.1em;
+.personal-info{
+    margin-left: 12px;
     font-size: 2em;
+    width: 50%;
     text-align: right;
-    background: none;
-	font-family: 'Rift Bold';
-	text-shadow: 0px 2px 2px var(--mythos-bright),
-        0px 1px 4px var(--mythos-pink);
-    color: var(--mythos-white);
-}
-
-input.logos-name {
-    max-width: 50%;
-    height: 1.2em;
-    padding-right: 0.1em;
-    padding-left: 0.2em;
-    font-size: 2em;
-    text-align: left;
-    background: none;
     font-family: 'Rift Bold';
-    text-shadow: 0px 2px 3px white,
+    text-shadow: 0px 2px 2px var(--mythos-bright),
+        0px 1px 4px var(--mythos-pink);
+    }
+
+input.age {
+        font-size: 2em;
+        background: none;
+        margin-top: 8px;
+        padding-left: 3px;
+        width: 50%;
+        font-family: 'Rift Bold';
+        text-shadow: 0px 2px 3px white,
         0px 2px 4px var(--logos-orange);
-    color: var(--logos-text);
-}
+        color: var(--logos-text);
+        }
 
 input.short-description {
+    margin-top: 8px;
     outline: none;
     background: transparent;
     padding-right: 5px;
     padding-left: 5px;
-    text-align: center;
-	font-family: 'Averia Serif Libre';
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Rift Bold';
 }
 
 input.danger-name {
@@ -723,10 +719,6 @@ input.improvement-description {
     max-width: 55%;
 }
 
-.character-basic-info {
-    min-width: 70%;
-    /* max-width: 70%; */
-}
 
 input.improvement-uses {
     width: 3%;
@@ -1294,6 +1286,7 @@ section.juice-data-block {
     text-transform: uppercase;
     margin-bottom: 0;
     margin-left: 0.3em;
+    margin-top: 10px;
 }
 
 .improvement-name:hover {
@@ -1402,6 +1395,11 @@ div.dots-section {
     /* max-width: 60%; */
     padding-top: 2px;
 }
+
+.tag-item {
+    margin-top: 10px;
+}
+
 
 ul.tag-list {
     list-style: none;
@@ -1651,7 +1649,6 @@ div.themebook-name {
 
 .image-block {
     /* flex-shrink: 5; */
-    max-height: 300px;
 	text-align: center;
     /* height: 300px; */
 }
@@ -1659,7 +1656,7 @@ div.themebook-name {
 .sheet header.sheet-header img {
     flex: none;
     height: unset;
-    max-height: 200px;
+    max-height: 500px;
     margin-right: 0;
 }
 
@@ -1670,8 +1667,7 @@ div.themebook-name {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-	max-height: 15em;
-    /* background-image: url(../images/coffee1.webp); */
+	/* background-image: url(../images/coffee1.webp); */
 }
 
 .profile-img {
