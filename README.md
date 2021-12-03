@@ -1,3 +1,7 @@
+
+## This is just a fork. 
+* Original author: Taragnor
+* Original repository: https://github.com/taragnor/city-of-mist
 # City of Mist for Foundry VTT
 **Created By:** Taragnor <br>
 **Visual/CSS design by:** LorduFreeman
