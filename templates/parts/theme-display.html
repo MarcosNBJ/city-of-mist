@@ -74,10 +74,10 @@
 		</div>
 	</div>
 	{{#if (eq tbdata.type "Logos")}}
-	<div class="themebook-identity-label"> <b class="themebook-identity">Identity</b> </div>
+	<div class="themebook-identity-label"> <b class="themebook-identity">Description</b> </div>
 	{{/if}}
 	{{#if (eq tbdata.type "Mythos")}}
-	<div class="themebook-mystery-label"> <b class="themebook-mystery">Mystery</b> </div>
+	<div class="themebook-mystery-label"> <b class="themebook-mystery">Description</b> </div>
 	{{/if}}
 	{{#if (eq tbdata.type "Mist")}}
 	<div class="themebook-mist-label"> <b class="themebook-directive">Directive</b> </div>
@@ -114,7 +114,7 @@
 		{{#if (eq tag.type "tag")}}
 		{{#if (eq tag.data.data.theme_id ../theme.id)}}
 		{{#if (eq tag.data.data.subtype "power")}}
-		<li>
+		<li class="tag-item">
 			{{> "systems/city-of-mist/templates/parts/tag-display.html" tag=tag owner=../owner locked=../locked sheetowner=../sheetowner canBurn=true data=tag.data.data}}
 		</li>
 		{{/if}}
@@ -125,7 +125,7 @@
 		{{#if (eq tag.type "tag")}}
 		{{#if (eq tag.data.data.theme_id ../theme.id)}}
 		{{#if (eq tag.data.data.subtype "weakness")}}
-		<li>
+		<li class="tag-item">
 			{{> "systems/city-of-mist/templates/parts/tag-display.html" tag=tag owner=../owner locked=../locked sheetowner=../sheetowner canBurn=false data=tag.data.data }}
 		</li>
 		{{/if}}

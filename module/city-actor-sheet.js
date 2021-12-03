@@ -281,11 +281,11 @@ export class CityActorSheet extends CitySheet {
 	async _createTagOrImprovement (event, bonus = false) {
 		//TODO: allow for text string attachment to improvements
 		let idChoice;
-		if (!bonus) {
-			idChoice  = await this.improvementOrTagChoiceList(event);
-			if (idChoice == null)
-				return;
-		}
+		// if (!bonus) {
+		// 	idChoice  = await this.improvementOrTagChoiceList(event);
+		// 	if (idChoice == null)
+		// 		return;
+		// }
 		const themeId = getClosestData(event, "themeId");
 		const themeType = getClosestData(event, "themeType");
 		const crispy = themeType == "character" ? false : true;

@@ -5,7 +5,7 @@
 	<div class="tags-header"> Tags </div>
 	<ul class="tag-list">
 		{{#each tags as |tag tid|}}
-		<li>
+		<li class="tag-item">
 			{{> "systems/city-of-mist/templates/parts/tag-display.html" tag=tag owner=../owner locked=true sheetowner=null canBurn=false}}
 		</li>
 		{{/each}}

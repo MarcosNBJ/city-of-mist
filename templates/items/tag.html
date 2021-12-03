@@ -3,7 +3,7 @@
 	<input type="text" class="tag-name" name="name" value="{{item.name}}">
 	<label> Tag Question </label>
 	{{#if (not data.custom_tag) }}
-	<div class="question" > {{data.question_letter}} - {{data.question}} </div>
+	<input type="text" class="tag-question-entry" name="data.question" value="{{data.question}}">
 	{{else}}
 	<input type="text" class="tag-question-entry" name="data.question" value="{{data.question}}">
 	{{/if}}

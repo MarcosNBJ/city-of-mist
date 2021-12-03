@@ -308,17 +308,15 @@ export class CityActor extends Actor {
 		const themebook = await theme.getThemebook();
 		const data = themebook.data.data;
 		let custom_tag = false;
-		let question;
+		let question = "Question";
 		let subtype;
 		switch (temp_subtype) {
 			case "power":
 				subtype = "power";
-				question = data.power_questions[question_letter];
 				await theme.decUnspentUpgrades();
 				break;
 			case "weakness":
 				subtype = "weakness";
-				question = data.weakness_questions[question_letter];
 				if (this.numOfWeaknessTags(theme_id) >= 1)
 					await theme.incUnspentUpgrades();
 				break;
@@ -326,7 +324,6 @@ export class CityActor extends Actor {
 				subtype = "power";
 				custom_tag = true;
 				question_letter = "_";
-				question = "???";
 				break;
 			default:
 				throw new Error(`Unrecognized Tag Type ${temp_subtype}`);

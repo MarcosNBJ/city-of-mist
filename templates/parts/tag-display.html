@@ -5,6 +5,8 @@
 		{{/if}}
 	</div>
 	<div class="flex-wide flex-line">
+		<b>{{data.question}}</b>
+		<br>
 		{{> "systems/city-of-mist/templates/parts/tag-name.html" locked=locked owner=owner activated=(hasActivatedTag sheetowner.id owner.id tag.id) direction=(activatedDirection sheetowner.id owner.id tag.id) tag=tag data=data}}
 	</div>
 	<div class="flex-narrow flex-line flex-burn-flame-cell">
